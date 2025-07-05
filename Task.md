@@ -94,7 +94,7 @@
 
 ---
 
-### Person 2: Parallel/Serial, Printer, Keyboard/Display
+### Jesmarie: Parallel/Serial, Printer, Keyboard/Display
 
 - **8255** (parallel), **8251** (serial), printer interface.
 - **8279** (keyboard/display).
@@ -104,7 +104,7 @@
 
 ---
 
-### Person 3: Data Conversion, USB (DMA), Interrupts
+### Valeria: Data Conversion, USB (DMA), Interrupts
 
 - **ADC**, **DAC** interfacing (block diagrams, connections).
 - **USB interface** through DMA (**8237**).
@@ -114,7 +114,7 @@
 
 ---
 
-### Person 4: Diskette Controller (8272), DMA, Integration
+### Giovanny: Diskette Controller (8272), DMA, Integration
 
 - Diskette controller (floppy, **8272**), **8237 DMA** for high-speed data.
 - Pseudocode for **USB** and diskette transfers using DMA.
@@ -125,9 +125,9 @@
 ---
 ## 📋 Task Division Summary for 4 Members
 
-| **Member** | **Area** | **Components** | **Deliverables** | **File(s) Needed** | **Status** |
-|------------|----------|----------------|------------------|-------------------|------------|
-| 🟢 **Jared** | CPU & Memory Architecture | • 8086 CPU<br>• 8087 Coprocessor<br>• 1MB RAM/ROM<br>• Address decoding | • Block diagrams<br>• Memory map<br>• Initialization code<br>• Assembly routines | **CPU_Memory.md**<br>CPU_Memory.asm<br>CPU_Memory_pseudocode.md<br>CPU_Memory.txt | **✅ COMPLETE** |
-| 🟡 **Member 2** | User I/O Interface | • 16-digit 7-segment display<br>• 64-key matrix keyboard<br>• Printer | • Display driver<br>• Keyboard scanner<br>• Printer interface<br>• Assembly examples | **IO_Peripherals.md** | ⏳ PENDING |
-| 🟡 **Member 3** | Communications & Interrupts | • RS-232 serial port<br>• Parallel port<br>• USB+DMA<br>• 8259A interrupt controller | • Communication drivers<br>• DMA controller<br>• Interrupt handlers<br>• USB routines | **Data_Conversion_Interrupts.md** | ⏳ PENDING |
-| 🟡 **Member 4** | Data Conversion & Storage | • ADC (Analog-to-Digital)<br>• DAC (Digital-to-Analog)<br>• 8272 Floppy controller | • ADC/DAC drivers<br>• Disk controller<br>• Conversion routines<br>• Storage examples | **Storage_DMA_Integration.md** | ⏳ PENDING |
+| **Member**      | **Area**                    | **Components**                                                                       | **Deliverables**                                                                      | **File(s) Needed**                                                                | **Status**     |
+| --------------- | --------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | -------------- |
+| 🟢 **Jared**    | CPU & Memory Architecture   | • 8086 CPU<br>• 8087 Coprocessor<br>• 1MB RAM/ROM<br>• Address decoding              | • Block diagrams<br>• Memory map<br>• Initialization code<br>• Assembly routines      | **CPU_Memory.md**<br>CPU_Memory.asm<br>CPU_Memory_pseudocode.md<br>CPU_Memory.txt | **✅ COMPLETE** |
+| 🟢 **Jesmarie** | User I/O Interface          | • 16-digit 7-segment display<br>• 64-key matrix keyboard<br>• Printer                | • Display driver<br>• Keyboard scanner<br>• Printer interface<br>• Assembly examples  | **IO_Peripherals.md**                                                             | ⏳ PENDING      |
+| 🟢 **Valeria**  | Communications & Interrupts | • RS-232 serial port<br>• Parallel port<br>• USB+DMA<br>• 8259A interrupt controller | • Communication drivers<br>• DMA controller<br>• Interrupt handlers<br>• USB routines | **Data_Conversion_Interrupts.md**                                                 | ⏳ PENDING      |
+| 🟢 **Giovanny** | Data Conversion & Storage   | • ADC (Analog-to-Digital)<br>• DAC (Digital-to-Analog)<br>• 8272 Floppy controller   | • ADC/DAC drivers<br>• Disk controller<br>• Conversion routines<br>• Storage examples | **Storage_DMA_Integration.md**                                                    | ⏳ PENDING      |
