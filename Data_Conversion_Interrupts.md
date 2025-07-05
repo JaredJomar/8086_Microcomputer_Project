@@ -11,6 +11,7 @@ This document outlines the implementation of the ADC/DAC interface, USB via DMA 
 
 ### Block Diagram:
 
+```
 
                          ANALOG      ┌─────────────┐
                          INPUT       |             |
@@ -33,6 +34,7 @@ This document outlines the implementation of the ADC/DAC interface, USB via DMA 
         |           3001H        └─────────────────┘ 
         └────────────────────────┘  
                     3000H
+```
 
 ### Description:
 
@@ -85,6 +87,7 @@ OUT 3001H, AL     ; write to DAC latch (address 3001H)
 
 ### Block Diagram:
 
+```
 ┌─────────────┐
 |             |
 |     RAM     |                              ┌───────────┐
@@ -102,6 +105,7 @@ OUT 3001H, AL     ; write to DAC latch (address 3001H)
                                 |
                                 |
                              6x30IAH
+```
 
 ### Description:
 
@@ -169,6 +173,7 @@ The 8259A Programmable Interrupt Controller (PIC) allows the 8086 microprocessor
     - ICM4: Enables 8086/88 mode operation.
 - In this setup, we're assuming a single 8259A with no slave connected (non-cascaded)
 
+```
       [ADC]        [USB/DMA]
         |              |
        IR0            IR1
@@ -188,6 +193,7 @@ The 8259A Programmable Interrupt Controller (PIC) allows the 8086 microprocessor
 |----------|---------|
 | ICW1/OCW1| 0x20    |
 | ICW2     | 0x21    |
+```
 
 ### Pseudocode:
 
