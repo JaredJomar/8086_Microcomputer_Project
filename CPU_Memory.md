@@ -525,11 +525,11 @@ MEMORY CONTROL SIGNALS:
 ┌─────────────┬────────────────────────────────────────┐
 │ Signal      │ Function                               │
 ├─────────────┼────────────────────────────────────────┤
-│ RAS        │ Row Address Strobe (DRAM timing)        │
-│ CAS        │ Column Address Strobe (DRAM timing)     │
-│ WE         │ Write Enable (active low)               │
-│ OE         │ Output Enable (ROM/RAM read)            │
-│ CS         │ Chip Select (from address decoder)      │
+│ RAS         │ Row Address Strobe (DRAM timing)       │
+│ CAS         │ Column Address Strobe (DRAM timing)    │
+│ WE          │ Write Enable (active low)              │
+│ OE          │ Output Enable (ROM/RAM read)           │
+│ CS          │ Chip Select (from address decoder)     │
 └─────────────┴────────────────────────────────────────┘
 ```
 
